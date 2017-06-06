@@ -1,0 +1,29 @@
+{
+  "name": "your-first-choo-app-workshop",
+  "version": "1.0.0",
+  "description": "Step by step results of your-first-choo-app guide",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js > public/bundle.js",
+    "watch": "watchify index.js -o public/bundle.js -dv",
+    "start": "ecstatic ./public -p 3000",
+    "lint": "standard"
+  },
+  "keywords": [
+    "workshop",
+    "choo",
+    "framework",
+    "web"
+  ],
+  "author": "Luis Del Águila <luisdelaguila@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^14.4.0",
+    "choo": "^5.6.2",
+    "ecstatic": "^2.1.0",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
+  }
+}
